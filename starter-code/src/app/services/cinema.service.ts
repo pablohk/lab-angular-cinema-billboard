@@ -1,30 +1,18 @@
 import { Injectable } from '@angular/core';
 import moviesSample from  ',,/../sample-movies';
-
-interface movie {
-  id: Number;
-  title: String;
-  poster:String;
-  synopsis: String;
-  genres: Array<String>;
-  year:Number;
-  director: String;
-  actors: Array<String>;
-  hours:Array<String>;
-  room:Number;
-  }
+import { Imovie } from '../interfaces/Imovie';
 
 @Injectable()
 export class CinemaService {
 
-    movies : Array<movie>=moviesSample;
+    movies : Array<Imovie>=moviesSample;
 
-    getMovies():Array<movie>{
+    getMovies():Array<Imovie>{
       return this.movies;
     };
 
-    getMovie(id):movie{
-        let mov: movie;
+    getMovie(id):Imovie{
+        let mov: Imovie;
         this.movies.forEach (e =>{
           if(e.id === id){
             mov=e;

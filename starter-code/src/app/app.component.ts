@@ -13,10 +13,10 @@ export class AppComponent implements OnInit{
 
  ngOnInit(){
 
-   // 
-   // this.accesCinema.getMovies().forEach(e=>{
-   //   console.log(e);
-   // });
+   //
+    //this.accesCinema.getMovies().forEach(e=>{
+    // console.log(e);
+   //});
    // console.log(this.accesCinema.getMovie(1));
 
  }

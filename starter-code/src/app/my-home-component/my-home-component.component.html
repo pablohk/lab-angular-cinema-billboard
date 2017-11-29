@@ -1,3 +1,8 @@
-<p>
-  my-home-component works!
-</p>
+<div class="container">
+  <div *ngFor=" let e of listMovies">
+  <div><p>{{e.room}}</p></div>
+  <div><img src="{{e.poster}}"></div>
+  <div><p> {{e.title}}</p></div>
+  <div><button (click)="viewDetails(e.id)"> Go to detail  </button></div>
+  <!--<div><a [routerLink]="['../movie/e.id']">Go to detail</a></div>-->
+</div>

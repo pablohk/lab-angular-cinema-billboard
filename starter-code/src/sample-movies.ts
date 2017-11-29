@@ -1,4 +1,5 @@
-const moviesSample: any[]=[
+import { Imovie } from './app/interfaces/Imovie';
+const moviesSample: Array<Imovie>=[
   {
     id: 1,
     title: "The Shawshank Redemption",
@@ -16,7 +17,9 @@ const moviesSample: any[]=[
       "William Sadler",
       "Clancy Brown",
       "Gil Bellows"
-    ]
+    ],
+    hours: ["14","17","19","22"],
+    room:1
   }, {
     id: 2,
     title: "The Godfather",
@@ -34,7 +37,9 @@ const moviesSample: any[]=[
       "Richard S. Castellano",
       "Robert Duvall",
       "Sterling Hayden"
-    ]
+    ],
+    hours: ["14","17","19","22"],
+    room:2
   }, {
     id: 3,
     title: "The Godfather Part II",
@@ -52,7 +57,9 @@ const moviesSample: any[]=[
       "Robert De Niro",
       "John Cazale",
       "Talia Shire"
-    ]
+    ],
+    hours: ["14","17","19","22"],
+    room:3
   }, {
     id: 4,
     title: "The Dark Knight",
@@ -70,7 +77,9 @@ const moviesSample: any[]=[
       "Michael Caine",
       "Maggie Gyllenhaal",
       "Gary Oldman"
-    ]
+    ],
+    hours: ["14","17","19","22"],
+    room:4
   },
   {
     id: 5,
@@ -89,7 +98,9 @@ const moviesSample: any[]=[
       "Caroline Goodall",
       "Jonathan Sagall",
       "Embeth Davidtz"
-    ]
+    ],
+    hours: ["14","17","19","22"],
+    room:5
   }
 ]
  export default moviesSample;
