@@ -12,9 +12,12 @@ export class AppComponent implements OnInit{
     constructor(private accesCinema: CinemaService) { }
 
  ngOnInit(){
-   this.accesCinema.getMovies().forEach (e=>{
-     console.log(e);
-   });
+
+   // 
+   // this.accesCinema.getMovies().forEach(e=>{
+   //   console.log(e);
+   // });
+   // console.log(this.accesCinema.getMovie(1));
 
  }
 
